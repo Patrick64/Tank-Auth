@@ -1,7 +1,7 @@
 Tank Auth is an authentication library for PHP-framework CodeIgniter. It's based on DX Auth, althouth the code was seriously reworked.
 
 
-Changelog
+## Changelog
 
 1.0.9
 PHPass settings are moved to config-file for better control over user data.
@@ -25,7 +25,7 @@ use_username config-parameter is added. Now username is optional (only email is 
 The library is released.
 
 
-Features
+## Features
 
 The key points of the library are:
 
@@ -60,7 +60,7 @@ It's full featured
 * HTML or plain-text emails.
 
 
-Installing Tank Auth
+## Installing Tank Auth
 
 1. Download the latest version of the library.
 2. Unzip the package.
@@ -73,7 +73,7 @@ Please don't forget to look into config files (tank_auth.php and email.php) if s
 WARNING: By default the library generates strong system-specific password hashes that are not portable. It means that once created, user database cannot be dumped and exported to another server. This behavior can be changed in config-file as well.
 
 
-The library in a nutshell
+## The library in a nutshell
 
 The library uses MVC model, which means that all database-related methods are incapsulated in model files, and the library itself is used as interface to these methods. A controller (auth) dispatches incoming requests, calls the library methods and renders corresponding views (to show in browser or to send as emails). The controller includes the following methods:
 
